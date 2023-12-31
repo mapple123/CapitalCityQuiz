@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewZeit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zeit:" />
+
+        <TextView
+            android:id="@+id/textViewPunkte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Punkte:" />
+
+        <TextView
+            android:id="@+id/textViewFragenCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewFrage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Wie lautet die Hauptstadt von Deutschland" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="100dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonAntwort1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAntwort2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAntwort3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAntwort4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttonWeiter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="300dp"
+                android:text="Weiter"
+                android:textAllCaps="false" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
